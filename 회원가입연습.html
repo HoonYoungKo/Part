@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="회원가입연습.css" type="text/css">
+</head>
+<body>
+  <div id="create">
+    <header>회원 가입</header>
+
+    <section>
+      <div class="id">아이디 <input type="text"/></div>
+      <div class="pw">비밀번호<input type="password"/></div>
+      <div class="pw_check">비밀번호확인<input type="password"/></div>
+      <div class="phonenum">전화번호<input type="tel"/>-<input type="tel"/>-<input type="tel"/></div>
+      <div class="address">집주소<input type="text"/><button type="submit" name="search_adr">우편번호찾기</button><input type="text"/><input type="text"/></div>
+      <div class="mail">이메일<input type="email"/>@
+        <select>
+          <option>직업입력</option>
+          <option>naver.com</option>
+          <option>yahoo.com</option>
+        </select>
+      </div>
+      <div class="workplace">직장주소<input type="text"/><button type="submit" name="search_work">우편번호찾기</button><input type="text"/><input type="text"/></div>
+      <div class="work_num">직장 전화번호
+        <select>
+          <option>02</option>
+          <option>031</option>
+          <option>043</option>
+        </select>-
+        <input type="tel"/>-<input type="tel"/>
+      </div>
+      <div class="postal">우편물 수령지
+        <input type="radio" name="postal_radio" value="postal_home">집주소로 수령
+        <input type="radio" name="postal_radio" value="postal_work">회사주소로 수령
+      </div>
+      <div class="marry">결혼여부
+        <input type="radio" name="marry_radio" value="marry_y">기혼
+        <input type="radio" name="marry_radio" value="marry_n">미혼
+      </div>
+      <div class="hobby">관심사
+        <input type="checkbox" name="habby_check" value="habby_1">경제
+        <input type="checkbox" name="habby_check" value="habby_2">문화
+        <input type="checkbox" name="habby_check" value="habby_3">정치
+        <input type="checkbox" name="habby_check" value="habby_4">체육
+        <input type="checkbox" name="habby_check" value="habby_5">외교
+      </div>
+    </section>
+    <footer>
+       <button type="submit" name="create_complete">회원가입</button>
+       <button name="create_cancle">취소</button>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
