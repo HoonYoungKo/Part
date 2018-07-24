@@ -1,62 +1,95 @@
 <!Doctype html>
 <html>
 <head>
-  <title></title>
+  <title>회원가입연습</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="회원가입연습.css" type="text/css">
 </head>
 <body>
   <div id="create">
-    <header>회원 가입</header>
 
-    <section>
-      <div class="id">아이디 <input type="text"/></div>
-      <div class="pw">비밀번호<input type="password"/></div>
-      <div class="pw_check">비밀번호확인<input type="password"/></div>
-      <div class="phonenum">전화번호<input type="tel"/>-<input type="tel"/>-<input type="tel"/></div>
-      <div class="address">집주소<input type="text"/><button type="submit" name="search_adr">우편번호찾기</button><input type="text"/><input type="text"/></div>
-      <div class="mail">이메일<input type="email"/>@
-        <select>
-          <option>직업입력</option>
-          <option>naver.com</option>
-          <option>yahoo.com</option>
-        </select>
-      </div>
-      <div class="workplace">직장주소<input type="text"/><button type="submit" name="search_work">우편번호찾기</button><input type="text"/><input type="text"/></div>
-      <div class="work_num">직장 전화번호
-        <select>
-          <option>02</option>
-          <option>031</option>
-          <option>043</option>
-        </select>-
-        <input type="tel"/>-<input type="tel"/>
-      </div>
-      <div class="postal">우편물 수령지
-        <input type="radio" name="postal_radio" value="postal_home">집주소로 수령
-        <input type="radio" name="postal_radio" value="postal_work">회사주소로 수령
-      </div>
-      <div class="marry">결혼여부
-        <input type="radio" name="marry_radio" value="marry_y">기혼
-        <input type="radio" name="marry_radio" value="marry_n">미혼
-      </div>
-      <div class="hobby">관심사
-        <input type="checkbox" name="habby_check" value="habby_1">경제
-        <input type="checkbox" name="habby_check" value="habby_2">문화
-        <input type="checkbox" name="habby_check" value="habby_3">정치
-        <input type="checkbox" name="habby_check" value="habby_4">체육
-        <input type="checkbox" name="habby_check" value="habby_5">외교
-      </div>
-    </section>
-    <footer>
-       <button type="submit" name="create_complete">회원가입</button>
-       <button name="create_cancle">취소</button>
-    </footer>
-
-
-
-
-
-
+    <header>회원 가입</header><hr>
+    <form action="" method="post">
+      <table>
+        <tr>
+          <td>아이디</td>
+          <td><input type="text" name="id"></td>
+        </tr>
+        <tr>
+          <td>비밀번호</td>
+          <td><input type="password" name="pw"></td>
+        </tr>
+        <tr>
+          <td>비밀번호확인</td>
+          <td><input type="password" name="pwc"></td>
+        </tr>
+        <tr>
+          <td>전화번호</td>
+          <td><input type="tel" name="tel1" size="6"> - <input type="tel" name="tel2" size="6"> - <input type="tel" name="tel3" size="6"></td>
+        </tr>
+        <tr>
+          <td>집주소</td>
+          <td class="집주소">
+            <input type="text" name="local1" size="15"><button type="submit" name="search_home">우편번호찾기</button>
+        <br>    <input type="text" name="local2" size="25">
+        <br>    <input type="text" name="local3" size="25">
+          </td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td><input type="email" name="mail1">@
+             <select>
+               <option value="직접입력">직접입력</option>
+               <option value="naver">naver.com</option>
+               <option value="yahoo">yahoo.com</option>
+             </select>
+          </td>
+        </tr>
+        <tr>
+          <td>직장주소</td>
+          <td>
+            <input type="text" name="work1" size="15"><button type="submit" name="search_work">우편번호찾기</button>
+          <br>  <input type="text" name="work2" size="25">
+          <br>  <input type="text" name="work3" size="25">
+          </td>
+        </tr>
+        <tr>
+          <td>직장 전화번호</td>
+          <td>
+            <select>
+              <option value="02">02</option>
+              <option value="031">031</option>
+              <option value="043">043</option>
+            </select>
+            <input type="tel" name="wtel1" size="6"> - <input type="tel" name="wtel2" size="6">
+          </td>
+        </tr>
+        <tr>
+          <td>우편물 수령지</td>
+          <td><input type="radio" name="dec" value="radio_home">집주소로 수령
+            <input type="radio" name"dec" value="radio_work">회사주소로 수령
+          </td>
+        </tr>
+        <tr>
+          <td>결혼여부</td>
+          <td><input type="radio" name="marry" value="marry_n">미혼
+            <input type="radio" name"marry" value="marry_y">기혼
+          </td>
+        </tr>
+        <tr>
+          <td>관심사</td>
+          <td><input type="checkbox" name="habby_check" value="habby_1">경제
+          <input type="checkbox" name="habby_check" value="habby_2">문화
+          <input type="checkbox" name="habby_check" value="habby_3">정치
+          <input type="checkbox" name="habby_check" value="habby_4">체육
+          <input type="checkbox" name="habby_check" value="habby_5">외교</td>
+        </tr>
+      </table>
+      <footer>
+        <button type="submit" name="check" value="check_ok">회원가입</button>
+        <button type="submit" name="check" value="check_cancel">취소</button>
+      </footer>
+    </form>
 
 </body>
 
