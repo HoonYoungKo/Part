@@ -1,0 +1,20 @@
+body{margin:0;padding:0; }
+
+header #nav_total{
+  width:100%;
+
+}
+#nav_total ul{
+  width: 1040px;
+  margin: 0 auto;
+  height:30px;
+  line-height: 30px;
+ overflow: hidden;
+}
+#nav_total li{
+  float: left;
+  margin-left: 50px;
+list-style: none;
+font-size: 0.9em;
+
+}
